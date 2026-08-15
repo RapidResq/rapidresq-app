@@ -59,8 +59,8 @@ Many emergency situations require immediate support, but users may be panicked, 
 
 | Name | Role | Focus Area |
 | --- | --- | --- |
-| Nirali | Project Lead | Product direction, planning, and system coordination |
-| Deekshitha | App Development | Flutter frontend and user experience |
+| Nirali | Project Lead | Product direction, Flutter frontend, and system coordination |
+| Deekshitha | App Development | User experience |
 | Pranjal | Backend & AI | APIs, LLM integration, and emergency logic |
 | Rudra | Location & Integration | GPS, maps, and live sharing workflows |
 
