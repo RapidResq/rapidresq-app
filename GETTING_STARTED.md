@@ -33,12 +33,13 @@ git checkout -b yourname/what-youre-building
 ```
 
 **Example branch names:**
+
 | Member | Branch |
 |---|---|
-| Nirali | `nirali/ai-backend` |
+| Nirali | `nirali/ai-llm` |
 | Deekshitha | `deekshitha/mobile-ui` |
-| Pranjal | `pranjal/gps-location` |
-| Rudra | `rudra/multimedia-docs` |
+| Pranjal | `pranjal/backend-db` |
+| Rudra | `rudra/location-gps` |
 
 ## 5. Project folder structure
 
@@ -46,10 +47,10 @@ Work inside your assigned folder:
 
 | Folder | Owner | What goes here |
 |---|---|---|
-| `backend/` | Nirali | FastAPI backend, LLM integration, speech-to-text |
-| `app/` | Deekshitha | Flutter UI, screens, navigation, TTS |
-| `location/` | Pranjal | Maps, GPS, hospital lookup, SOS, emergency contacts |
-| `media/` | Rudra | Animations, offline mode, multimedia |
+| `ai/` | Nirali | LLM integration, emergency-type detection, first-aid response logic, speech-to-text |
+| `app/` | Deekshitha | Flutter UI, screens, navigation, TTS, media editing/UX |
+| `backend/` | Pranjal | Django backend, emergency classification logic, database (SQLite/Firebase) |
+| `location/` | Rudra | Maps, GPS, hospital lookup, SOS, live location sharing |
 | `docs/` | Everyone | Documentation — each person's section in their own file |
 
 ## 6. Environment variables (API keys)
