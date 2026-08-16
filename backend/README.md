@@ -1,10 +1,25 @@
-# Backend
+# Backend Module
 
-This folder holds the server-side logic for RapidResQ, including the API, business rules, data processing, and integrations with services such as AI models, emergency workflows, and databases.
+This folder contains the server-side logic for RapidResQ.
 
-Typical contents include:
-- API routes and handlers
-- Authentication and authorization logic
-- Business logic for emergency response flows
-- Database models and migrations
-- Service integrations and background jobs
+## What's here
+- Django project — emergency classification logic
+- Database models (SQLite for development)
+- API endpoints consumed by the Flutter app (`app/`)
+
+## Tech
+- Django (Python)
+- SQLite (dev database)
+
+## Setup
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate   # or venv\Scripts\activate on Windows
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+
+## API docs
+See `docs/api.md` (or `openapi.yaml`, once added) for endpoint contracts.
