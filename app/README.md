@@ -1,10 +1,17 @@
-# App
+# App Module (Flutter Frontend)
 
-This folder contains the main application code for the RapidResQ product experience. It is the home for the user-facing app implementation, shared UI logic, and core product features.
+This folder contains the mobile app UI and client-side logic for RapidResQ.
 
-Typical contents include:
-- Frontend screens and views
-- App state management
-- Feature modules and shared components
-- User interaction flows
-- Product-specific logic and configuration
+## What's here
+- Flutter screens and navigation
+- UI/UX components
+- Text-to-speech (TTS) output
+- Media handling and editing
+
+## Tech
+- Flutter / Dart
+- On-device `speech_to_text` package (no API key needed)
+
+## Setup
+- Run `flutter pub get` before first build
+- Connects to the backend API — see `backend/README.md` for endpoint details
