@@ -22,30 +22,24 @@ Many emergency situations require immediate support, but users may be panicked, 
 ### Mobile App
 - Flutter
 - Dart
-- Firebase Authentication
-- Firebase Firestore / Realtime Database
+- On-device speech-to-text (`speech_to_text` package — no API key required)
 
 ### Backend and APIs
-- Node.js
-- Express.js
+- Django (Python)
 - REST APIs
-- WebSocket / real-time communication support
+- SQLite (development database)
 
 ### AI and Intelligence
+- Google Gemini API (LLM for emergency detection and first-aid guidance)
 - Python
-- Large Language Models (LLM)
-- Natural Language Processing
-- Speech-to-text and text analysis pipelines
 
 ### Location and Services
 - GPS / device location services
-- Google Maps Platform APIs
-- Location tracking and emergency sharing workflows
+- OpenStreetMap + Leaflet (chosen to avoid Google Maps API's billing requirement)
 
 ### DevOps and Collaboration
-- GitHub
-- Firebase Hosting / Cloud services
-- CI/CD pipelines
+- GitHub (GitHub Organization: RapidResQ)
+- GitHub Actions (CI/CD, planned)
 - Team-based agile development
 
 ## System Flow
@@ -72,12 +66,14 @@ Many emergency situations require immediate support, but users may be panicked, 
 - Create a scalable foundation for future integrations and expansion
 
 ## Getting Started
-This project is organized into functional folders for team collaboration:
-- backend/ — server-side logic and APIs
-- app/ — mobile app code
-- location/ — GPS and mapping logic
-- media/ — project assets and visuals
-- docs/ — documentation and project planning
 
+This project is organized into functional folders for team collaboration:
+
+- `ai/` — LLM integration, emergency detection, and first-aid logic
+- `backend/` — server-side logic and APIs
+- `app/` — mobile app code
+- `location/` — GPS and mapping logic
+- `media/` — project assets and visuals
+- `docs/` — documentation and project planning
 ## License
 This project is currently under active team development and is intended for collaborative use within the RapidResQ project.
