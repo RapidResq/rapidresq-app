@@ -1,10 +1,16 @@
-# Location
+# Location Module
 
-This folder is for geolocation and mapping related functionality. It stores code and data that power location detection, map interactions, routing, and emergency dispatch context.
+This folder handles all location, maps, and GPS-related features.
 
-Typical contents include:
-- GPS and location services
-- Map rendering and geofencing logic
-- Location-based matching and routing
-- Region and address utilities
-- Integration with mapping APIs
+## What's here
+- Live location sharing
+- Hospital/emergency-service lookup
+- SOS trigger logic
+- Map rendering and geofencing
+
+## Tech
+- OpenStreetMap + Leaflet (chosen over Google Maps API to avoid billing/credit-card requirements)
+- Device GPS APIs (via Flutter)
+
+## Setup
+- No API key required — OpenStreetMap tiles are free to use
