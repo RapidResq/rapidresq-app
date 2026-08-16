@@ -1,0 +1,38 @@
+name: Repo workflow reminders
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  main-branch-reminder:
+    name: Main branch reminder
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reminder for main branch usage
+        run: |
+          echo "Reminder: we prefer working on feature branches instead of direct commits to main."
+          echo "Open a pull request for review before merging important changes."
+
+  pr-check:
+    name: PR hygiene reminder
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check that the PR has a clear title
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          echo "PR title: ${PR_TITLE}"
+          echo "Please keep the title clear and specific."
+
+      - name: Reminder for small reviewable PRs
+        run: |
+          echo "Keep PRs focused and easy to review."
+          echo "Avoid mixing unrelated tasks in one pull request."

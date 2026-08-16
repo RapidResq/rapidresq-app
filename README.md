@@ -58,6 +58,25 @@ Many emergency situations require immediate support, but users may be panicked, 
 | Pranjal | Backend and Repo Management | Django, emergency logic, and deployment |
 | Rudra | Location & Integration | GPS, maps, and live sharing workflows |
 
+## Repository workflow
+
+This repository follows a simple branch-based workflow so the team can stay organized without making things heavy.
+
+- Keep `main` as the stable branch
+- Work on a feature branch for your task
+- Open a pull request before merging
+- Keep PRs small and easy to review
+- Use short, readable branch names
+
+Examples:
+
+- `pranjal-backend`
+- `nirali-ai`
+- `deekshitha-ui`
+- `rudra-location`
+
+The full workflow guidance is in [docs/TEAM_WORKFLOW.md](docs/TEAM_WORKFLOW.md), and the repo includes a simple PR template in [.github/pull_request_template.md](.github/pull_request_template.md).
+
 ## Goals
 - Build a fast and understandable emergency assistance experience
 - Support both voice and text-driven crisis detection
